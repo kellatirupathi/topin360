@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+    <head>
+	      <meta charset="UTF-8">
+        <title>Proctoring...</title>
+	      <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+
+    <body>
+        <div class="container">
+            <p> Your audio and video will be recorded for the duration of test.</p>
+            <video id="videoPreview" autoplay muted></video>
+	          <div class="controls">
+<!--                <button id="startRecording" class="button start">Start Recording</button>-->
+                <button id="stopRecording" class="button stop">Finish Exam</button>
+            </div>
+            <a id="downloadLink" class="download-link" style="display: none;">Download Your Video</a>
+        </div>
+
+        <script type="text/javascript" src="{% static 'js/proctor_script.js' %}"></script>
+    </body>
+</html>

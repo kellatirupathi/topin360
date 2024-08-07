@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+    <head>
+	      <meta charset="UTF-8">
+        <title>360 Proctoring | Home</title>
+	      <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1> TopIn 360 Proctoring</h1>
+	          <h4>proctor id  {{ proctor_id }}</h4>
+	          <form method="get" action="{% url 'proctoring:Proctor' proctor_id=proctor_id %}" target="_blank">
+		          <input name="student-id" id="student-id" placeholder="Student ID" value="87fddc16-d08a-4b53-a7fd-89aeb7a2b0a1">
+		          <input name="assessment-id" id="assessment-id" placeholder="Assessment ID" value="15ede4d4-f242-4cc0-b7d0-be40970f1ada">
+		          <button type="submit" id="submit-btn">Go to 360 Proctoring</button>
+	          </form>
+        </div>
+        <script type="text/javascript" src="{% static 'js/index.js' %}"></script>
+    </body>
+</html>
