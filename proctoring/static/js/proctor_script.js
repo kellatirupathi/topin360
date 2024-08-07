@@ -1,7 +1,7 @@
 const USER_ID_KEY = "user_id="
 const ASSESSMENT_ID_KEY = "assessment_id="
 
-const socket = new WebSocket('ws://192.168.137.224:5000/ws/live-proctoring?uid=user-1&testId=test-1');
+const socket = new WebSocket('ws://127.0.0.1:8000/ws/live-proctoring?uid=user-1&testId=test-1');
 
 //GETTING IDS FROM URL
 const urlString = document.location.href;
