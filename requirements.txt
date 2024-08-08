@@ -115,3 +115,4 @@ virtualenv==20.26.2
 watchdog==4.0.1
 Werkzeug==3.0.1
 yarl==1.9.4
+pyaudio @ file:///path/to/pyaudio_wheel.whl
