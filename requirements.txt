@@ -22,7 +22,7 @@ distlib==0.3.8
 distro==1.9.0
 Django==5.0.7
 djangorestframework==3.12.4
-channels==3.0.3
+channels==3.0.4
 filelock==3.14.0
 Flask==3.0.0
 fpdf==1.7.2
@@ -115,10 +115,3 @@ virtualenv==20.26.2
 watchdog==4.0.1
 Werkzeug==3.0.1
 yarl==1.9.4
-Django==4.1
-daphne==3.0.2
-channels==3.0.4
-pyaudio==0.2.11
-fpdf==1.7.2
-pyTelegramBotAPI==4.14.1
-beautifulsoup4==4.9.3
